@@ -211,7 +211,7 @@ Through this project, I learned:
 **Pragya Dwivedi**
 
 - GitHub: https://github.com/pragya638
-- LinkedIn: *(Add your LinkedIn profile URL here)*
+
 
 ---
 
