@@ -85,17 +85,6 @@ Google Gemini
 
 ---
 
-## 📸 Project Screenshots
-
-### 🔹 Semantic Search
-
-> Add a screenshot of your semantic search results here.
-
-```
-screenshots/semantic_search.png
-```
-
----
 
 ### 🔹 FAISS Search Results
 
