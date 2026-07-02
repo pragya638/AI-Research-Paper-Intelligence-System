@@ -1,37 +1,40 @@
 # 🧠 AI Research Paper Intelligence System
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Google%20Gemini-AI-orange?style=for-the-badge&logo=google" />
-  <img src="https://img.shields.io/badge/FAISS-Vector%20Search-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/SentenceTransformers-NLP-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/HuggingFace-Datasets-yellow?style=for-the-badge&logo=huggingface" />
-</p>
+An AI-powered research paper search and summarization system that combines **Semantic Search**, **FAISS Vector Indexing**, and **Google Gemini** to help users discover and understand research papers using natural language queries.
+
+---
 
 ## 📖 Overview
 
-The **AI Research Paper Intelligence System** is an AI-powered application that helps users discover and understand research papers using **semantic search** and **Generative AI**.
+The AI Research Paper Intelligence System enables users to search research papers based on semantic meaning rather than exact keywords.
 
-Unlike traditional keyword-based search, this project uses **Sentence Transformers** to understand the meaning of a user's query, retrieves the most relevant papers using **FAISS Vector Search**, and generates intelligent summaries and explanations using **Google Gemini**.
+The system generates dense text embeddings using **Sentence Transformers**, indexes them with **FAISS**, retrieves the most relevant research papers, and uses **Google Gemini** to generate structured summaries and insights.
 
-This project demonstrates the integration of **Natural Language Processing (NLP)**, **Vector Databases**, and **Large Language Models (LLMs)**.
-
----
-
-## 🚀 Features
-
-- 🔍 Semantic Search using Sentence Transformers
-- 🧠 Research Paper Embeddings
-- ⚡ Fast Vector Search with FAISS
-- 🤖 AI-powered Paper Summarization using Google Gemini
-- 💬 Question Answering on Research Papers
-- 📚 Natural Language Search
-- 📄 Research Paper Recommendation
-- ☁️ Developed in Google Colab
+This project demonstrates the practical integration of **Natural Language Processing (NLP)**, **Semantic Search**, **Vector Similarity Search**, and **Large Language Models (LLMs)**.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Features
+
+- 🔍 Semantic search using natural language queries
+- 🧠 Research paper embeddings with Sentence Transformers
+- ⚡ Fast similarity search using FAISS
+- 🤖 AI-powered research paper summarization using Google Gemini
+- 📑 Structured analysis including:
+  - Paper Title
+  - Summary
+  - Main Objective
+  - Key Contributions
+  - Methodology
+  - Important Findings
+  - Limitations
+  - Future Scope
+  - Beginner-friendly Explanation
+- 📚 Search across research papers based on semantic similarity
+
+---
+
+## 🛠 Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -40,73 +43,50 @@ This project demonstrates the integration of **Natural Language Processing (NLP)
 | Pandas | Data Processing |
 | NumPy | Numerical Computing |
 | Hugging Face Datasets | Research Paper Dataset |
-| Sentence Transformers | Text Embeddings |
-| FAISS | Vector Database |
-| Google Gemini API | AI Summarization & Q&A |
+| Sentence Transformers | Text Embedding Generation |
+| FAISS | Vector Similarity Search |
+| Google Gemini API | AI-powered Summarization |
 
 ---
 
 ## 📂 Project Workflow
 
-```text
-Research Paper Dataset
-        │
-        ▼
-Data Cleaning & Preprocessing
-        │
-        ▼
-Create paper_text (Title + Abstract)
-        │
-        ▼
-Generate Sentence Embeddings
-        │
-        ▼
-Store Embeddings (.npy)
-        │
-        ▼
-Build FAISS Vector Index
-        │
-        ▼
-Semantic Search
-        │
-        ▼
-Retrieve Most Relevant Papers
-        │
-        ▼
+```
+User Query
+     │
+     ▼
+Sentence Transformer
+(Generate Query Embedding)
+     │
+     ▼
+FAISS Vector Search
+     │
+     ▼
+Retrieve Most Relevant Research Papers
+     │
+     ▼
 Google Gemini
-        │
-        ├── Research Paper Summary
-        ├── Key Contributions
-        ├── Methodology
-        ├── Important Findings
-        ├── Limitations
-        └── Beginner-Friendly Explanation
+     │
+     ▼
+Structured Research Paper Analysis
 ```
 
 ---
 
-
-### 🔹 FAISS Search Results
-
-> Add a screenshot of your FAISS search output here.
+## 📁 Project Structure
 
 ```
-screenshots/faiss_search.png
-```
-
----
-
-### 🔹 Gemini Summary
-
-> Add a screenshot of the Gemini-generated summary here.
-
-```
-screenshots/gemini_summary.png
+AI-Research-Paper-Intelligence-System/
+│
+├── AI_Research_Paper_Intelligence_System.ipynb
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-## 📦 Installation
+## 🚀 Installation
 
 Clone the repository
 
@@ -114,72 +94,58 @@ Clone the repository
 git clone https://github.com/pragya638/AI-Research-Paper-Intelligence-System.git
 ```
 
-Go to the project folder
+Move into the project directory
 
 ```bash
 cd AI-Research-Paper-Intelligence-System
 ```
 
-Install dependencies
+Install the required libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the notebook
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-or open the notebook in **Google Colab**.
+Or open the notebook directly in **Google Colab**.
 
 ---
 
-## 📁 Project Structure
+## 💻 Usage
 
-```text
-AI-Research-Paper-Intelligence-System/
-│
-├── AI_Research_Paper_Intelligence_System.ipynb
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-└── screenshots/
-      ├── semantic_search.png
-      ├── faiss_search.png
-      └── gemini_summary.png
-```
+Run the notebook sequentially.
 
----
+Example search queries:
 
-## 💡 Sample Queries
-
-Try searching with queries like:
-
-- Large Language Models
-- Deep Learning
+- Machine Learning
 - Reinforcement Learning
 - Computer Vision
-- Machine Learning
-- Medical AI
 - Natural Language Processing
+- Large Language Models
+- Healthcare AI
+- Robotics
+
+The system retrieves the most relevant research papers and generates an AI-powered analysis using Google Gemini.
 
 ---
 
 ## 🎯 Learning Outcomes
 
-Through this project, I learned:
+This project helped strengthen my understanding of:
 
 - Semantic Search
 - Sentence Embeddings
-- Vector Databases (FAISS)
+- FAISS Vector Indexing
 - Natural Language Processing (NLP)
 - Google Gemini API Integration
 - Research Paper Retrieval
 - AI-powered Summarization
-- Building an End-to-End AI Application
+- End-to-End AI Application Development
 
 ---
 
@@ -187,11 +153,11 @@ Through this project, I learned:
 
 - Retrieval-Augmented Generation (RAG)
 - PDF Upload Support
-- Multi-Paper Question Answering
-- Citation Export (BibTeX / APA)
-- Research Chatbot
-- Interactive Web Application using Gradio or Streamlit
-- Deployment on Hugging Face Spaces
+- Multi-paper Comparison
+- Interactive Web Interface using Streamlit or Gradio
+- Citation Export (APA/BibTeX)
+- Research Paper Chatbot
+- Cloud Deployment
 
 ---
 
@@ -201,11 +167,12 @@ Through this project, I learned:
 
 - GitHub: https://github.com/pragya638
 
+---
+
+## ⭐ Acknowledgements
+
+This project was developed as part of my AI & Machine Learning learning journey, exploring semantic search, vector similarity search, and large language model applications.
 
 ---
 
-## ⭐ Support
-
 If you found this project useful, consider giving it a ⭐ on GitHub.
-
-Feedback and suggestions are always welcome!
